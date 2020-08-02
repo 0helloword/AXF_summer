@@ -1,0 +1,43 @@
+#address {
+    margin: 0 0.1rem;
+}
+
+#address > span {
+    /*span  display: inline-block;*/
+    width: 0.5rem;
+    text-align: center;
+    line-height: 0.1rem;
+    font-size: 0.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+.menuList {
+    border-bottom: 0.04rem solid lightgrey;
+    height: 2.5rem;
+    position: relative;
+}
+
+.menuList > p {
+    width: 85%;
+    line-height: 1.5rem;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.4rem;
+}
+
+.menuList > span {
+    position: absolute;
+    right: 0.4rem;
+    width: 0.5rem;
+    text-align: center;
+    line-height: 0.8rem;
+    font-size: 0.4rem;
+}
+
+
+

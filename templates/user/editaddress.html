@@ -1,0 +1,29 @@
+{% extends 'base_user.html' %}
+{% load static %}
+
+{% block ext_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'axf/user/js/address.js' %}"></script>
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+    <form action="#">
+        <div class="form-group">
+            <label for="username_input">收货人</label>
+            <input name="username" type="text" class="form-control" id="username_input" value="{{ address.a_name }}">
+        </div>
+        <div class="form-group">
+            <label for="phone_input">手机号码</label>
+            <input name="phone" type="text" class="form-control" id="phone_input" value="{{ address.a_phone }}">
+        </div>
+        <div class="form-group">
+            <label for="address_input">收货地址</label>
+            <input name="address" type="text" class="form-control" id="address_input" value="{{ address.a_address }}">
+        </div>
+        <span id="info"></span>
+    </form>
+    <button class="btn btn-success btn-block" adrid={{ address.id }} id="save">保存</button>
+    </div>
+{% endblock %}

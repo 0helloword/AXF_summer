@@ -1,0 +1,46 @@
+{% extends 'base_user.html' %}
+{% load static %}
+
+{% block ext_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'axf/user/js/login.js' %}"></script>
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+{#    <script type="text/javascript">#}
+{#    $(function () {#}
+{#        var $login = $("#login");#}
+{#        $login.click(function () {#}
+{#            console.log('111');#}
+{#            var username = $("#username_input").val();#}
+{#            var password = $("#password_input").val();#}
+{#            $.post('/app/login/', {'username': username, 'password': md5(password)}, function (data) {#}
+{#                console.log(data);#}
+{#                if (data['status'] === 200) {#}
+{#                    window.open("/app/home/", target = "_self");#}
+{#                } else if (data['status'] === 701) {#}
+{#                    console.log('data');#}
+{#                    var $login_info=$('#login_info');#}
+{#                    $login_info.html('用户名或密码错误').css('color','red')#}
+{#                }#}
+{#            })#}
+{#        })#}
+{#    })#}
+{##}
+{#    </script>#}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+    <form action="#" onsubmit="return parse_data()">
+        <div class="form-group">
+            <label for="username_input">用户名</label>
+            <input name="username" type="text" class="form-control" id="username_input" placeholder="请输入用户名或邮箱">
+        </div>
+        <div class="form-group">
+            <label for="password_input">密码</label>
+            <input name="password" type="password" class="form-control" id="password_input" placeholder="请输入密码">
+        </div>
+        <span id="login_info"></span>
+    </form>
+    <button class="btn btn-success btn-block" id="login">登陆</button>
+    </div>
+{% endblock %}

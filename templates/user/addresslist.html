@@ -1,0 +1,25 @@
+{% extends 'base_user.html' %}
+{% load static %}
+
+{% block ext_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'axf/order/css/address.css' %}">
+{% endblock %}
+
+{% block ext_js %}
+    <script type="text/javascript" src="{% static 'axf/mine/js/addresslist.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    <div id="address" class="container">
+        <span id="add">添加新地址</span>
+        {% for adr in address %}
+            <li class="menuList">
+                <p>{{ adr.a_name }}
+                    {{ adr.a_phone }}
+                    {{ adr.a_address }}</p>
+                <span class="edit" adrid="{{ adr.id }}">编辑</span>
+            </li>
+        {% endfor %}
+    </div>
+{% endblock %}
