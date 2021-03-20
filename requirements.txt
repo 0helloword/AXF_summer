@@ -14,7 +14,7 @@ filetype==1.0.5
 har2case==0.3.1
 httprunner==2.3.3
 idna==2.8
-Jinja2==2.10.3
+Jinja2==2.11.3
 jsonpath==0.82
 MarkupSafe==1.1.1
 middleware==1.2.3
