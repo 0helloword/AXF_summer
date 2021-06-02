@@ -37,7 +37,7 @@ requests-toolbelt==0.9.1
 six==1.12.0
 sqlparse==0.3.1
 thefuck==3.30
-urllib3==1.25.7
+urllib3==1.26.5
 wcwidth==0.1.9
 win-unicode-console==0.5
 wxPython==4.0.0b2
