@@ -5,7 +5,7 @@ colorama==0.4.3
 colorlog==4.0.2
 cryptography==2.9.2
 decorator==4.4.2
-django==1.11.28
+django==2.2.24
 django-debug-toolbar==2.2
 django-redis==4.11.0
 django-redis-cache==2.1.0
