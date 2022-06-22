@@ -18,7 +18,7 @@ Jinja2==2.10.3
 jsonpath==0.82
 MarkupSafe==1.1.1
 middleware==1.2.3
-numpy==1.18.3
+numpy==1.22.0
 pandas==1.0.3
 Pillow==5.4.1
 psutil==5.7.0
